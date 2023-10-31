@@ -1,5 +1,8 @@
 :root {
-  --color-primary: lightskyblue;
+  --color-primary: #1992d4;
+  --color-base: #ffffff;
+  --color-background: #e2e8f0;
+  --color-accent: #f0b429;
   --logo-width: 60px;
   --base-padding: 25px;
 }
