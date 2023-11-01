@@ -34,6 +34,21 @@ body {
   grid-template-areas:
     "search account"
     "greeting buttons";
+  padding: var(--base-padding) 40px;
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: var(--base-padding);
+  grid-area: search;
+}
+
+.search-bar {
+  width: 100%;
+  height: 30px;
+  background-color: var(--color-background);
+  border-radius: 20px;
 }
 
 .main {
@@ -94,7 +109,8 @@ body {
   text-decoration: none;
 }
 
-.nav-icon {
+.nav-icon,
+.search-icon {
   width: 25px;
   height: auto;
 }
