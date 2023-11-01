@@ -131,7 +131,9 @@ body {
 .main {
   grid-area: main;
   background-color: var(--color-background);
-  padding: calc(var(--base-padding) * 1.5);
+  padding-inline: calc(var(--base-padding) * 1.5);
+  padding-top: calc(var(--base-padding) * 2.5);
+  padding-bottom: calc(var(--base-padding) * 4);
   gap: calc(var(--base-padding) * 1.5);
 
   display: grid;
