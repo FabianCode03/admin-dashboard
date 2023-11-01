@@ -76,6 +76,37 @@ body {
   font-weight: bold;
 }
 
+.greetings-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "profile-picture welcome-message"
+    "profile-picture extended-name";
+  column-gap: var(--base-padding);
+  row-gap: calc(var(--base-padding) * 0.5);
+}
+
+.greetings-grid .profile-picture {
+  grid-area: profile-picture;
+  width: 80px;
+  align-self: center;
+  font-size: 50px;
+}
+
+.welcome-message {
+  grid-area: welcome-message;
+  font-size: small;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.extended-profile-name {
+  grid-area: extended-name;
+  font-size: x-large;
+  font-weight: bold;
+}
+
 .main {
   grid-area: main;
   background-color: var(--color-background);
