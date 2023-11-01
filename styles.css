@@ -27,6 +27,13 @@ body {
 .primary-header {
   grid-area: header;
   background-color: var(--color-base);
+
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 4fr 6fr;
+  grid-template-areas:
+    "search account"
+    "greeting buttons";
 }
 
 .main {
