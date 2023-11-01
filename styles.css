@@ -34,7 +34,7 @@ body {
   grid-template-areas:
     "search account"
     "greeting buttons";
-  padding: var(--base-padding) 40px;
+  padding-inline: 50px;
 }
 
 .search-row {
@@ -49,6 +49,30 @@ body {
   height: 30px;
   background-color: var(--color-background);
   border-radius: 20px;
+}
+
+.account-row {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: calc(var(--base-padding) * 1.5);
+}
+
+.profile-picture {
+  aspect-ratio: 1/1;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #f0b429;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.profile-name {
+  font-weight: bold;
 }
 
 .main {
@@ -110,7 +134,8 @@ body {
 }
 
 .nav-icon,
-.search-icon {
+.search-icon,
+.bell-icon {
   width: 25px;
   height: auto;
 }
