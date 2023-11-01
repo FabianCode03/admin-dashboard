@@ -132,6 +132,7 @@ body {
   grid-area: main;
   background-color: var(--color-background);
   padding: calc(var(--base-padding) * 1.5);
+  gap: calc(var(--base-padding) * 1.5);
 
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -148,7 +149,8 @@ body {
   flex-direction: column;
 }
 
-.projects h2 {
+.projects h2,
+.announcements h2 {
   font-size: large;
   font-weight: 600;
   margin-bottom: var(--base-padding);
@@ -172,12 +174,14 @@ body {
   box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h3 {
+.project-card h3,
+.announcements h3 {
   font-size: medium;
   padding-bottom: calc(var(--base-padding) * 0.25);
 }
 
-.project-card p {
+.project-card p,
+.announcements p {
   color: var(--color-text-secondary);
   font-size: 0.9rem;
 }
@@ -189,6 +193,25 @@ body {
   display: flex;
   justify-content: right;
   gap: calc(var(--base-padding) * 1.5);
+}
+
+.announcements {
+  grid-area: announcements;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--color-base);
+  padding: calc(var(--base-padding) * 1.75);
+  border-radius: 8px;
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.announcements hr {
+  margin: var(--base-padding) 0;
+  height: 1px;
 }
 
 .sidebar {
